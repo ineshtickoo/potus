@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Monument";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Monument"), url("MonumentExtended-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Monument Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Monument Bold"),
+    url("MonumentExtended-Ultrabold.woff") format("woff");
+}
+* {
+  border: ; /*white solid 1px;*/
+}
+.home {
+  background: url("./img/bg.png") no-repeat;
+  background-size: cover;
+}
+.album {
+  background: url("./img/bgg.png") no-repeat;
+  background-size: cover;
+}
+.album img {
+  cursor: pointer;
+  position: absolute;
+  top: 4rem;
+  left: 8rem;
+  width: 45%;
+  margin: 0;
+  padding: 0;
+  transition: ease-in-out 0.3s;
+}
+/*.album img:hover {
+  width: 43%;
+}*/
+.alblink {
+  color: white;
+}
+.timeline {
+  width: 40%;
+  position: absolute;
+  top: 20rem;
+  left: 25rem;
+}
+.timeline p {
+  font-size: 1.3rem;
+  color: #ffe4bf;
+  text-align: center;
+}
+.timeline p span {
+  color: #fac273;
+}
+
+header {
+  width: 60%;
+  float: right;
+  font-size: 5rem;
+  font-family: "Monument Bold";
+}
+p {
+  font-size: 2rem;
+  font-family: "Monument Regular";
+  color: #fac273;
+}
+h1 {
+  color: #da9738;
+  margin-top: 3%;
+  float: right;
+  margin-right: 5rem;
+}
+
+h2 {
+  margin-top: -10%;
+  float: right;
+  width: 70%;
+  margin-right: 5rem;
+  text-align: right;
+  font-size: 3rem;
+}
+li {
+  padding: 10px;
+}
+a {
+  color: #ffe4bf;
+  text-decoration: none;
+}
+a:hover {
+  background-image: linear-gradient(120deg, #ffc16490 0%, #d1973f90 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+  transition: opacity 0.25s;
+}
+.active {
+  background-image: linear-gradient(120deg, #ffc16490 0%, #d1973f90 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+  transition: opacity 0.25s;
+}
+
+a:active {
+  background-image: linear-gradient(120deg, #ffc164 0%, #d1973f 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+  transition: opacity 0.25s;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  flex-wrap: wrap;
+}
+.card {
+  padding: 0;
+  margin: 0;
+  margin: 2%;
+  width: 27%;
+  background-color: #191919;
+  border-radius: 30px;
+  height: 370px;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  text-align: center;
+}
+.card img {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.card img:hover {
+  transform: translateZ(50px);
+  border-radius: 30px;
+}
+.card button {
+  cursor: pointer;
+  border: 1px solid #da9738;
+  outline: none;
+  background: none;
+  font-family: "Monument";
+  color: white;
+  padding: 10px;
+  position: relative;
+  top: 15%;
+  transition: 0.3s ease-in-out;
+  transform: translateZ(20px);
+}
+
+.card button:hover {
+  transform: translateZ(40px);
+  border-radius: 30px;
+  background: #da9738;
+}
+.card h1 {
+  font-family: "Monument";
+  width: 100%;
+
+  transform: translateZ(40px);
+  margin-top: 15px;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0%;
+}
+.card p {
+  font-family: "Monument";
+  width: 80%;
+  transform: translateZ(40px);
+  margin-top: 40px;
+  font-size: 0.7rem;
+}
+.card h2 {
+  font-family: "Monument";
+  width: 100%;
+  color: wheat;
+  transform: translateZ(40px);
+  margin-top: 15px;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 15%;
+}
